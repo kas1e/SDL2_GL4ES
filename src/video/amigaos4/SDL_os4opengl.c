@@ -20,7 +20,7 @@
 */
 #include "../../SDL_internal.h"
 
-#if SDL_VIDEO_DRIVER_AMIGAOS4
+#if defined (SDL_VIDEO_OPENGL) && !defined (SDL_GL4ES)
 
 #include "SDL_os4video.h"
 #include "SDL_os4window.h"
